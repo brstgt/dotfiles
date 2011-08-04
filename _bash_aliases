@@ -20,3 +20,6 @@ alias ..='cd ..'
 alias finddarcsbup="find . -iname \"*-darcs-backup*\""
 alias rmdarcsbup="find . -iname \"*-darcs-backup*\" -exec rm -rf {} \;"
 alias rmtailingws="sed \"s/^\s*//;s/\s*$//\" -i "
+
+alias deploy-single="sudo -u www /repos/system.deploy/bin/deploy-patch-single"
+alias deploy-type="sudo -u www /repos/system.deploy/bin/deploy-patch-type"

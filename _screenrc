@@ -13,6 +13,17 @@ defscrollback 5000
 # Set 256 color xterm inside screen
 term xterm-256color
 
-hardstatus alwayslastline
-hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W}%c %{g}]'
+#hardstatus alwayslastline
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W}%c %{g}]'
 
+screen bash
+title "br"
+screen su - www
+title "www"
+screen su -
+title "root"
+screen repo-tailer
+title "log-br"
+screen qm-tailer
+title "log"
+select 0

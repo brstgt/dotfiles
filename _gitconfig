@@ -1,6 +1,6 @@
 [user]
-  email = ich@weltraumschaf.de
-  name  = Weltraumschaf
+  email = brstgt@googlemail.com
+  name  = brstgt
 
 [color]
   diff   = auto
@@ -16,7 +16,7 @@
   autocrlf = input
 
 [github]
-  user  = Weltraumschaf
+  user  = brstgt
   token = xxx
 
 [merge]
