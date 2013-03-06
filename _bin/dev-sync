@@ -1,0 +1,8 @@
+#!/bin/sh
+
+test -z "$1" && echo "Usage: $0 repo" && exit 1
+
+echo "Start rsync"
+
+cd ~/repos/$1 && rsync -avz --delete --force -rtlq --bwlimit=256  --exclude '.idea' --exclude '.git' --exclude 'tmp' \
+    . dev1.rz.kwick.de:~/$1

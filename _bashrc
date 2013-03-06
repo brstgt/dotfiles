@@ -202,11 +202,6 @@ DEBEMAIL=$DEBEMAIL_local
 DEBFULLNAME=$DEBFULLNAME_local
 export DEBEMAIL DEBFULLNAME
 
-# options for darcs
-export DARCS_DONT_ESCAPE_8BIT=1
-export DARCS_DO_COLOR_LINES=1
-export DARCS_ALWAYS_COLOR=1
-
 # In case, we've changed the directory, switch back to home dir
 cd
 
@@ -231,3 +226,4 @@ if [ "$SHLVL" -gt 4 ]; then
 fi
 
 export _PATH=$PATH # Workaround for screen on mac os
+export ANDROID_HOME="/Users/br/repos/android-sdk-macosx"

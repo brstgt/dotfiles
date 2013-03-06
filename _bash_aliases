@@ -18,3 +18,6 @@ alias df='df -h'
 alias ..='cd ..'
 
 alias rmtailingws="sed \"s/^\s*//;s/\s*$//\" -i "
+
+alias dev1="ssh dev1.rz.kwick.de"
+alias dev2="ssh dev2.jaumo.com"
