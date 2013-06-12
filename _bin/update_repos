@@ -1,0 +1,12 @@
+#!/bin/sh
+
+dir=`pwd`
+
+for i in `ls`
+do
+    test -d $i/.git && {
+        echo "Update $i"
+	cd $i && git pull
+    }
+    cd $dir
+done
