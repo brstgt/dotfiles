@@ -226,4 +226,4 @@ if [ "$SHLVL" -gt 4 ]; then
 fi
 
 export _PATH=$PATH # Workaround for screen on mac os
-export ANDROID_HOME="/Users/br/repos/android-sdk-macosx"
+export ANDROID_HOME="/Applications/Android Studio.app/sdk"
