@@ -24,8 +24,8 @@ if [ -f "$HOME/.config/perl" ] ; then
 fi
 
 # GNU core utils
-if [ -d /opt/local/libexec/gnubin ] ; then
-  PATH="/opt/local/libexec/gnubin:$PATH"
+if [ -d /usr/local/opt/coreutils/libexec/gnubin ] ; then
+  PATH="/usr/local/opt/coreutils/libexec/gnubin::$PATH"
 fi
 
 # macport stuff

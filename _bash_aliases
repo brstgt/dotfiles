@@ -19,7 +19,7 @@ alias ..='cd ..'
 
 alias rmtailingws="sed \"s/^\s*//;s/\s*$//\" -i "
 
-alias dev1="ssh dev1.rz.kwick.de"
-alias dev2="ssh dev2.jaumo.com"
+alias dev1="ssh dev1.dus3.jaumo.com"
 alias jdeploy="cd ~/repos/jaumo.web && sh tool/bin/deploy-head.sh"
 alias jdeployinstant="cd ~/repos/jaumo.web && php tool/bin/deploy-instant.php"
+alias pullall="git -C ~/repos/jaumo.web pull && git -C ~/repos/jaumo-android pull && git -C ~/repos/jaumo-ios pull"
