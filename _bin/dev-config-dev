@@ -1,6 +1,0 @@
-#!/bin/sh
-
-cd ~/repos/config.dev
-git checkout master
-cd ..
-dev-sync config.dev

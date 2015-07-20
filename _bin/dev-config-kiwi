@@ -1,6 +1,0 @@
-#!/bin/sh
-
-cd ~/repos/config.dev
-git checkout kiwi-live
-cd ..
-dev-sync config.dev

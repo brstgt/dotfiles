@@ -6,7 +6,7 @@ echo "Start sync $dir down"
 cd ~/repos/$dir && (
 
 rsync -avz --force -rtlq --bwlimit=256  --exclude '.idea' --exclude '.git' --exclude 'tmp' \
-    dev2.jaumo.com:~/$dir/ .
+    dev1.jaumo.com:~/$dir/ .
     
 
 )
