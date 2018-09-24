@@ -20,6 +20,18 @@ alias ..='cd ..'
 alias rmtailingws="sed \"s/^\s*//;s/\s*$//\" -i "
 
 alias dev1="ssh dev1.dus3.jaumo.com"
-alias jdeploy="cd ~/repos/jaumo.web && sh tool/bin/deploy-head.sh"
-alias jdeployinstant="cd ~/repos/jaumo.web && php tool/bin/deploy-instant.php"
-alias pullall="git -C ~/repos/jaumo.web pull && git -C ~/repos/jaumo-android pull && git -C ~/repos/jaumo-ios pull"
+alias k="kubectl"
+alias dc="docker-compose"
+alias j="cd ~/repos/jaumo/jaumo"
+
+de() {
+    NAME=$1
+    shift
+    docker exec -it $(docker ps -qf "name=$NAME") $@
+}
+
+da() {
+    NAME=$1
+    shift
+    docker attach $(docker ps -qf "name=$NAME") $@
+}

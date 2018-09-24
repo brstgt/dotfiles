@@ -2,7 +2,8 @@
 
 dir=`pwd`
 
-for i in `ls`
+repos=`find . -maxdepth 2 -type d`
+for i in $repos
 do
     test -d $i/.git && {
         echo "Update $i"

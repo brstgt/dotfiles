@@ -1,8 +1,8 @@
 #!/bin/sh
 
-dir=jaumo.web
+dir=jaumo/jaumo
 
 echo "Start rsync $dir"
 
-cd ~/repos/$dir && rsync -avz --delete --force -rtlq --bwlimit=256  --exclude '.idea' --exclude '.git' \
+cd ~/repos/$dir && rsync -avz --delete --force -rtlq --exclude '.idea' --exclude '.git' \
     . dev1.jaumo.com:~/$dir
