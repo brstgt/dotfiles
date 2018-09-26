@@ -16,5 +16,26 @@ if [ -n "$BASH_VERSION" ] ; then
   fi
 fi
 
-launchctl setenv ANDROID_SDK_ROOT /Users/br/Library/Android/sdk/
-launchctl setenv STUDIO_JDK /Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/
+# MacOS settings
+test -d /Users && {
+	launchctl setenv ANDROID_SDK_ROOT /Users/br/Library/Android/sdk/
+	launchctl setenv STUDIO_JDK /Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/
+
+	JAVA_VERSION=1.8.0_112
+	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk$JAVA_VERSION.jdk/Contents/Home
+	export PATH=$JAVA_HOME/bin:$PATH
+	export _PATH=$PATH # Workaround for screen on mac os
+}
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+PATH="$PATH:$HOME/.composer/vendor/bin:~/.local/bin"
+PATH="$PATH:$HOME/jaumo/jaumo/vendor/bin"
+export PHP_INI_SCAN_DIR=:~/etc/php.d
+export GOPATH=~/go
+
+alias cli=~/jaumo/jaumo/cli
+eval "$(symfony-autocomplete ~/jaumo/jaumo/cli)"

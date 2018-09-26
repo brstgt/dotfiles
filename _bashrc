@@ -227,11 +227,3 @@ if [ "$SHLVL" -gt 4 ]; then
 	echo -n -e "\033k`hostname`\033\\"
 fi
 
-JAVA_VERSION=1.8.0_112
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk$JAVA_VERSION.jdk/Contents/Home
-export PATH=$JAVA_HOME/bin:$PATH 
-export JAUMO_ENV=Development
-export _PATH=$PATH # Workaround for screen on mac os
-export ANDROID_HOME="/Users/br/Library/Android/sdk"
-export ANDROID_SDK_ROOT="/Users/br/Library/Android/sdk/"
-export GOPATH=/Users/br/go
