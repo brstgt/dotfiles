@@ -36,6 +36,7 @@ PATH="$PATH:$HOME/.composer/vendor/bin:~/.local/bin"
 PATH="$PATH:$HOME/jaumo/jaumo/vendor/bin"
 export PHP_INI_SCAN_DIR=:~/etc/php.d
 export GOPATH=~/go
+export JAUMO_ENV=Test
 
 alias cli=~/jaumo/jaumo/cli
 eval "$(symfony-autocomplete ~/jaumo/jaumo/cli)"
