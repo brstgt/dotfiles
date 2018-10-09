@@ -33,10 +33,10 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 PATH="$PATH:$HOME/.composer/vendor/bin:~/.local/bin"
-PATH="$PATH:$HOME/jaumo/jaumo/vendor/bin"
+PATH="$PATH:$HOME/backend/backend/vendor/bin"
 export PHP_INI_SCAN_DIR=:~/etc/php.d
 export GOPATH=~/go
 export JAUMO_ENV=Test
 
-alias cli=~/jaumo/jaumo/cli
-eval "$(symfony-autocomplete ~/jaumo/jaumo/cli)"
+alias cli=~/backend/backend/cli
+eval "$(symfony-autocomplete ~/backend/backend/cli)"
