@@ -10,5 +10,13 @@ export GOPATH=~/go
 export JAUMO_ENV=Test
 export ZPROFILE=1
 
-alias cli=~/repos/backend/backend/cli
-eval "$($HOME/.config/composer/vendor/bin/symfony-autocomplete ~/repos/backend/backend/cli)"
+CLI_PATH=~/repos/backend/backend/cli
+alias cli=$CLI_PATH
+
+if [ -d "$HOME/.composer" ] ; then
+    COMPOSER=$HOME/.composer
+else
+    COMPOSER=$HOME/.config/composer
+fi
+
+eval "$($COMPOSER/vendor/bin/symfony-autocomplete $CLI_PATH)"
