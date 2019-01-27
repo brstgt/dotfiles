@@ -1,0 +1,1 @@
+/home/br/.zplug/repos/eendroroy/alien/alien.zsh
