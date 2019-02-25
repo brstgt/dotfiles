@@ -3,7 +3,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-PATH="$PATH:$HOME/.composer/vendor/bin:~/.local/bin"
+PATH="$PATH:$HOME/.composer/vendor/bin:~/.local/bin:~/bin"
 PATH="$PATH:$HOME/repos/backend/backend/vendor/bin"
 export PHP_INI_SCAN_DIR=:~/etc/php.d
 export GOPATH=~/go
