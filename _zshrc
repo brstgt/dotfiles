@@ -4,7 +4,7 @@
 export ALIEN_THEME="soft"
 
 # Path to your oh-my-zsh installation.
-if [ -f "/home/br" ]
+if [ -d "/home/br" ]
 then
     export ZSH="/home/br/.oh-my-zsh"
 else
@@ -102,9 +102,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -f "~/.zplug" ]
+if [ -d "$HOME/.zplug" ]
 then
-    export ZPLUG_HOME="~/.zplug"
+    export ZPLUG_HOME="$HOME/.zplug"
 else
     export ZPLUG_HOME="/usr/local/opt/zplug"
 fi
