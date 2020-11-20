@@ -19,4 +19,4 @@ else
     COMPOSER=$HOME/.config/composer
 fi
 
-eval "$($COMPOSER/vendor/bin/symfony-autocomplete $CLI_PATH)"
+#eval "$($COMPOSER/vendor/bin/symfony-autocomplete $CLI_PATH)"
