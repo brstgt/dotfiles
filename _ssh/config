@@ -1,2 +1,6 @@
+Host *
+    ServerAliveInterval 300
+    ServerAliveCountMax 2
+
 Host 35.242.247.251
     ForwardAgent yes

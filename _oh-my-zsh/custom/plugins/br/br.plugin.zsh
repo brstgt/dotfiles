@@ -1,4 +1,4 @@
-alias dev1="ssh dev1.dus3.jaumo.com"
+alias dev1="ssh dev1.dus6.jaumo.com"
 alias k="kubectl"
 alias s="ssh"
 alias yipi="ssh yipi@yipi-store.com"
