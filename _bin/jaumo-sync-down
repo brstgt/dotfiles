@@ -5,4 +5,4 @@ echo "Start sync $dir down"
 
 cd ~/repos/$dir && 
 rsync -avz --force -rtlq --exclude '.idea' --exclude '.git' --exclude 'tmp' \
-     dev1.dus6.jaumo.com:~/$dir/ .
+     dev1.dus7.jaumo.com:~/$dir/ .

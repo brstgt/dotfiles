@@ -8,7 +8,8 @@ PATH="$PATH:$HOME/repos/backend/backend/vendor/bin"
 export PHP_INI_SCAN_DIR=:~/etc/php.d
 export GOPATH=~/go
 export JAUMO_ENV=Test
-export ZPROFILE=1
+export NODE_ENV=development
+export ANDROID_HOME=/Users/br/Library/Android/sdk
 
 CLI_PATH=~/repos/backend/backend/cli
 alias cli=$CLI_PATH

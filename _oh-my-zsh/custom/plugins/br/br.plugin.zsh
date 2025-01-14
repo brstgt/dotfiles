@@ -1,4 +1,4 @@
-alias dev1="ssh dev1.dus6.jaumo.com"
+alias dev1="ssh dev1.dus7.jaumo.com"
 alias k="kubectl"
 alias s="ssh"
 alias yipi="ssh yipi@yipi-store.com"
@@ -8,3 +8,5 @@ alias JDEV="export JAUMO_ENV=Development"
 alias JTEST="export JAUMO_ENV=Test"
 alias JPROD="export JAUMO_ENV=Production"
 alias JUTEST="export JAUMO_ENV=UnitTest"
+alias pull="gsta && gprom && gstp"
+ANDROID_HOME=/Users/br/Library/Android/sdk

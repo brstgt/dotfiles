@@ -4,5 +4,5 @@ dir=backend/backend
 
 echo "Start rsync $dir"
 
-cd ~/repos/$dir && rsync -avz --delete --force -rtlq --exclude '.idea' --exclude '.git' \
-    . dev1.dus6.jaumo.com:~/repos/$dir
+cd ~/repos/$dir && rsync -avz --delete --force -rtlq --exclude 'tmp' --exclude '.idea' --exclude 'build' --exclude '.git' \
+    . dev1.dus7.jaumo.com:~/repos/$dir

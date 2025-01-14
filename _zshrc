@@ -69,7 +69,7 @@ ZSH_THEME="alien"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(br git composer common-aliases debian docker extract github gradle history mvn phing redis-cli screen sudo supervisor systemd urltools vscode z)
+plugins=(br git gitfast composer common-aliases debian docker extract github gradle history mvn phing redis-cli screen sudo supervisor systemd urltools z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,3 +112,7 @@ source $ZPLUG_HOME/init.zsh
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug "eendroroy/alien", as:theme
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

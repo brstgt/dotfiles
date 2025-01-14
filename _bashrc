@@ -65,8 +65,8 @@ PATH="/usr/local/sbin:$PATH"
 
 export PATH
 
-if [ -d /Library/Java/Home ] ; then
-  export JAVA_HOME=/Library/Java/Home
+if [ -x /usr/libexec/java_home ] ; then
+  export JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
 if [ -d /opt/local/share/java/grails ] ; then

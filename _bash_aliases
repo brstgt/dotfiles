@@ -19,7 +19,7 @@ alias ..='cd ..'
 
 alias rmtailingws="sed \"s/^\s*//;s/\s*$//\" -i "
 
-alias dev1="ssh dev1.dus6.jaumo.com"
+alias dev1="ssh dev1.dus7.jaumo.com"
 alias k="kubectl"
 alias s="ssh"
 alias dc="docker-compose"
